@@ -5,3 +5,10 @@ script: mvn clean install
 cache:
   directories:
   - "$HOME/.m2"
+deploy:
+  provider: releases
+  api_key:
+    secure: F3+AaARWXkDSd7cI1WsV+6QFFog7N0W8p+zJds6M7ZHEKkQdJf2mSLZ5zIlb1lASrFVp3TjMzNdnG0JF6i1psarkYquC/kWO89UeWNxhya0Oarvji4ikVoZDfUFWa6P4mfLjo8d5hd7b+QtCD5ud/oTlAZiY1UDtB2KpanSQf3g+VSlWXQf2HwFkBxpUJzrhEjo0gAOcp+X225oFyPVishanFbFwYSxlCSaY92lEuIsVw9oNRb1ctJxZkoryDSYk6tuoIbX6ftA/4F7JPqmppoPWY9r1PzoVZszJhPov05XmEUabElvz47GyaEcvHbkgDjjP2OjtJfHpemEVTkQV8FmcnAchFJfUt6id3rlvl9PhspmjbVlsXzkzl5O7kCPm6JFBdkbxMvrhz7mvVw78AhMzUOHdbV+zlel7ESDuWIHnPqIR5mfoqMlsks3EbkOELTaSXP9Q2WzAIH+NlKPOkiwH8kWPQEd4TNYGnwqJqm4ujUiS/ogNMsVESjt7eZVIlls1eee9XjFl5B7Stmu41WIaWJ8QnYIRpQX3VM5sgKYTxl4vXI5NreZSzjDlMO2DrvoBL8xSxbWr0oLPQiilUOXXM5gBPxexZIel5Y0eI1Nf0ejAcywwZy0ShG7BDH+AS+3MBLudP7n+pQs4YOVSVZT5dHfdOWz/u3RFqMMlimA=
+  file: target/travis-test-ci-1.0-SNAPSHOT.jar
+  on:
+    repo: slivezey/travis-test-ci
